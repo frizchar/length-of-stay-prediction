@@ -54,10 +54,3 @@ def gridsearch_cv(hospital: int, predictors: list, number_of_classes: int, param
     print("Best score: ", grid_search.best_score_)
 
     return grid_result, best_params, df_test, le_map, start_time
-
-
-if __name__ == "__main__":
-    hospital = 1
-    predictors = ['weekday', 'hh24', 'patsex', 'patfamil', 'patter', 'patwayin', 'age',
-                  'patasfal1', 'has_patasfal2', 'has_patasfal3', 'icdblockid', 'docspec']
-    print('gridsearch cv :', gridsearch_cv(hospital, predictors))
