@@ -8,8 +8,8 @@ import fetch_data
 
 # test run_mode = 'prod'
 HOSPITAL_list = [1, 2]   # determine the hospital IDs
-predictors = ['weekday', 'hh24', 'patsex', 'patfamil', 'patter', 'patwayin', 'age',
-              'patasfal1', 'has_patasfal2', 'has_patasfal3', 'icdblockid', 'docspec']
+predictors = ['weekday', 'hh24', 'sex', 'family', 'ter', 'wayin', 'age',
+              'asfal1', 'has_asfal2', 'has_asfal3', 'icd10groupid', 'specialty']
 number_of_classes = 2
 param_grid = {
         'learning_rate': [0.01, 0.015, 0.1, 0.15],
@@ -32,7 +32,7 @@ if __name__ == "__main__":
         columns = ['patdatein']
         y_pred_data = temp[0][columns]
         y_pred_data['hospital'] = str(hospital)
-        y_pred_data = y_pred_data.reindex(columns=['hospital', 'patdatein'])
+        y_pred_data = y_pred_data.reindex(columns=['hospital', 'datein'])
 
         results = pd.merge(y_pred_data, y_pred, left_index=True, right_index=True)
 
