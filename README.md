@@ -2,9 +2,9 @@
 ### Overview
 We predict the length-of-stay (LOS) of hospital inpatients.
 The problem is treated as a classification problem having classes **'1 or 2 days'** and **'3+ days'**.<br>
-LOS = 1 ( _class1 = '1 or 2 days'_ ) is considered when _admission date = release date_.<br>
-LOS = 2 ( _class1 = '1 or 2 days'_ ) is considered when _admission date = release date + 1 day_.<br>
-LOS = 3 ( _class2 = '3+ days'_ ) is considered when _admission date = release date + 2 days_.<br>
+LOS = 1 ( _class 1 = '1 or 2 days'_ ) is considered when _admission date = release date_.<br>
+LOS = 2 ( _class 1 = '1 or 2 days'_ ) is considered when _admission date = release date + 1 day_.<br>
+LOS = 3 ( _class 2 = '3+ days'_ ) is considered when _admission date = release date + 2 days_.<br>
 etc.
 
 ### Folder structure
