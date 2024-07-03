@@ -18,8 +18,8 @@ The code is written in Python.
 
 ### Predictors
 1. sex : categorical variable := sex of patient
-1. family : categorical variable := family status of patient
-1. ter : categorical variable := prefecture of patient's residence
+1. family : categorical variable := family status id of patient
+1. ter : categorical variable := prefecture id of patient's residence
 1. wayin : categorical variable := type of patient's admission
 1. asfal1 : categorical variable := id of patient's 1st health insurance
 1. has_asfal2 : categorical variable := boolean flag on whether the patient has 2nd health insurance or not
