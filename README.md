@@ -25,7 +25,7 @@ The code is written in Python.
 1. has_asfal2 : categorical variable := boolean flag on whether the patient has 2nd health insurance or not
 1. has_asfal3 : categorical variable := boolean flag on whether the patient has 3rd health insurance or not
 1. icd10groupid : categorical variable := id of ICD10 group assigned to patient on admission
-1. spec : categorical variable := the doctor's specialty
+1. specialty : categorical variable := the doctor's specialty
 1. weekday : numerical variable := day of week (0,1,..6) on admission
 1. hh24 : numerical variable := hour of day (00,01,02,...,23) on admission
 1. age : numerical variable := patient age on admission day
