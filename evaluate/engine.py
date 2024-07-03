@@ -18,8 +18,8 @@ def run_engine(hospital: int, test_length: int, predictors: list, number_of_clas
         gridsearch_cv.gridsearch_cv(hospital, test_length, predictors, number_of_classes, param_grid)
 
     nbr_test_inpatients = len(df_test)
-    min_test_date = str(min(df_test['patdatein']).date())
-    max_test_date = str(max(df_test['patdatein']).date())
+    min_test_date = str(min(df_test['datein']).date())
+    max_test_date = str(max(df_test['datein']).date())
 
     # X_train, y_train = df_train[predictors], df_train['target']
     X_test, y_test = df_test[predictors], df_test['target']
