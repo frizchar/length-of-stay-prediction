@@ -8,8 +8,8 @@ import output
 # test run_mode = 'test'
 HOSPITAL_list = [1, 2]   # list holding the hospital IDs
 test_length = 15  # length of test period
-predictors = ['weekday', 'hh24', 'patsex', 'patfamil', 'patter', 'patwayin', 'age',
-              'patasfal1', 'has_patasfal2', 'has_patasfal3', 'icdblockid', 'docspec']
+predictors = ['weekday', 'hh24', 'sex', 'famil', 'ter', 'wayin', 'age',
+              'asfal1', 'has_asfal2', 'has_asfal3', 'icd10groupid', 'spec']
 number_of_classes = 2
 param_grid = {
         'learning_rate': [0.01, 0.015, 0.1, 0.15],
