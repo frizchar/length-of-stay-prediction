@@ -1,7 +1,7 @@
 # length-of-stay prediction
 ### Overview
 We predict the length-of-stay (LOS) of hospital inpatients.<br>
-The problem is treated as a classification problem using the xgboost algorithm and considering the following two classes:<br>
+The problem is treated as a classification problem using the [xgboost](https://github.com/dmlc/xgboost/releases) algorithm and considering the following two classes:<br>
 - class 1 = **'1 or 2 days'**<br>
 - class 2 = **'3+ days'**<br>
 
