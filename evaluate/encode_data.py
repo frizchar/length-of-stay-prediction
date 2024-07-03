@@ -9,15 +9,15 @@ def encode_data(hospital: int, predictors: list, number_of_classes: int):
     hospital = str(hospital)
 
     # fetch the final dataset
-    columns = predictors + ['los_group', 'patdatein']    
+    columns = predictors + ['los_group', 'datein']    
     data = fetch_data.pull_dataset(hospital, number_of_classes)[columns]
     data = data.rename(columns={'los_group': 'target'})
 
     encoded_data = data
     # encode predictors
     # encode categorical predictors as "category"
-    categorical_predictors = ['patsex', 'patfamil', 'patter', 'patwayin', 'patasfal1',
-                              'has_patasfal2', 'has_patasfal3', 'icdblockid', 'docspec']
+    categorical_predictors = ['sex', 'famil', 'ter', 'wayin', 'asfal1',
+                              'has_asfal2', 'has_asfal3', 'icd10groupid', 'specialty']
     encoded_data[categorical_predictors] = encoded_data[categorical_predictors].astype("category")
     # encode numerical predictors as "int64"
     numerical_predictors = ['weekday', 'hh24', 'age']
