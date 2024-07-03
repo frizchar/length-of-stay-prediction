@@ -10,6 +10,8 @@ The problem is treated as a classification problem using the [xgboost](https://g
 &rarr; LOS = 3 ( _class 2 = '3+ days'_ ) is considered when _admission date = release date + 2 days_.<br>
 etc.
 
+The code is written in Python.
+
 ### Folder structure
 - folder **evaluate** includes the evaluation code
 - folder **deploy** includes the deployment code
