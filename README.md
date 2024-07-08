@@ -16,11 +16,6 @@ The code is written in Python.
 - folder **evaluate** includes the evaluation code
 - folder **deploy** includes the deployment code
 
-```mermaid
-graph LR;
-    A[training set] --> B[evaluation set] --> C[prediction set]
-```
-
 ### Predictors
 1. sex : categorical variable := sex of patient
 1. family : categorical variable := family status id of patient
