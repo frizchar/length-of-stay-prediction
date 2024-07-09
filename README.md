@@ -16,6 +16,10 @@ The code is written in Python.
 - folder **evaluate** includes the evaluation code
 - folder **deploy** includes the deployment code
 
+### Dependencies
+The required packages are included in file ```requirements.txt```.<br>
+Python interpreter version used for this project: **3.9.4**
+
 ### Predictors
 1. sex : categorical variable := sex of patient
 1. family : categorical variable := family status id of patient
